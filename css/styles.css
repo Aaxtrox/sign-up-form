@@ -22,12 +22,64 @@ main > * {
     width: 20vw;
     height: 80vh;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 img {
-    margin-top: 3%;
+    margin: 20px;
     width: 19%;
     height: auto;
+}
+
+/* footer */
+footer > div {
+    font-size: 0.9rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 37px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px rgba(150, 150, 150, .3);
+    transition: all .1s ease-out;
+}
+.icon:hover{
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.icon:hover i{
+    color: #fff;
+}
+.icon .fa-linkedin-in{
+    color: #0077B5;
+}
+.lnk:hover{
+    background: #0077B5;
+}
+.icon .fa-github{
+    color: #000;
+}
+.git:hover{
+    background: #000;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
