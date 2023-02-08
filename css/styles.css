@@ -21,4 +21,13 @@ main > * {
     left: 40%;
     width: 20vw;
     height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+img {
+    margin-top: 3%;
+    width: 19%;
+    height: auto;
 }
