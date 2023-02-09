@@ -15,16 +15,24 @@
             <img src="./img/logo2-removebg-preview.png" alt="logo">
             <form action="#">
                 <div class="input">
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" minlength="5" required>
                 </div>
                 <div class="input">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input">
-                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <input type="password" name="password" id="password" placeholder="Enter your password" minlength="8" maxlength="15" required>
                 </div>
                 <div class="input">
-                    <input type="password" name="password2" id="password2" placeholder="Confirm your password">
+                    <input type="password" name="password2" id="password2" placeholder="Confirm your password" minlength="8" maxlength="15" required>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <div class="newsletter">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">I want to receive the newsletter</label>
                 </div>
                 <button type="submit">Sign Up</button>
             </form>
