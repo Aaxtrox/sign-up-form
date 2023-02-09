@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidugu&family=Josefin+Sans:wght@700&display=swap');
+
 main {
     position: relative;
     width: 100vw;
@@ -46,6 +48,12 @@ img {
     margin: 20px;
     width: 19%;
     height: auto;
+}
+
+h1 {
+    font-family: 'Gidugu', sans-serif;
+    font-size: 50px;
+    margin: 0;
 }
 
 input {
