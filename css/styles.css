@@ -15,7 +15,6 @@ main > * {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
-    border: 1px solid rgba(255, 255, 255, 0.73);
     position: absolute;
     top: 10%;
     left: 40%;
@@ -25,6 +24,22 @@ main > * {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: auto;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: 255, 255, 255, 0.3;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: 255, 255, 255, 0.3;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
 
 img {
