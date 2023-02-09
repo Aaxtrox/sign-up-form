@@ -49,11 +49,26 @@ input::placeholder {
     color: rgb(0, 0, 0);
 }
 
+p {
+    font-size: 0.8rem;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-box,
+.terms-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .newsletter, .terms {
     width: 20px;
     position: relative;
     margin: 20px auto;
 }
+
 .newsletter label,
 .terms label {
     width: 20px;
@@ -66,6 +81,7 @@ input::placeholder {
     border-radius: 4px;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
 }
+
 .newsletter label:after,
 .terms label:after {
     content: '';
@@ -81,14 +97,17 @@ input::placeholder {
     opacity: 0;
     transform: rotate(-45deg);
 }
+
 .newsletter label:hover::after,
 .terms label:hover::after {
     opacity: 0.3;
 }
+
 .newsletter input[type=checkbox],
 .terms input[type=checkbox] {
     visibility: hidden;
 }
+
 .newsletter input[type=checkbox]:checked + label:after,
 .terms input[type=checkbox]:checked + label:after {
     opacity: 1;
@@ -100,7 +119,7 @@ button {
     border: none;
     outline: none;
     font-size: 1.6rem;
-    margin: 40px 20px 20px 20px;
+    margin: 5% 20px;
     padding: 10px;
     background: #000;
     color: #fff;
@@ -122,7 +141,7 @@ footer{
     height: 35px;
     border-radius: 50px;
     background: #fff;
-    margin: 20px;
+    margin: 0 20px 20px 20px;
     text-align: center;
     font-size: 25px;
     line-height: 37px;
