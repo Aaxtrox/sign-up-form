@@ -217,6 +217,11 @@ a{
     html {
         font-size: 90%;
     }
+
+    .newsletter label:hover::after,
+    .terms label:hover::after {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -229,5 +234,10 @@ a{
 
     html {
         font-size: 80%;
+    }
+
+    .newsletter label:hover::after,
+    .terms label:hover::after {
+        opacity: 0;
     }
 }
