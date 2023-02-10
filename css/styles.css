@@ -73,8 +73,16 @@ input {
     color: rgb(0, 0, 0);
 }
 
+input:focus {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 input::placeholder {
     color: rgb(0, 0, 0);
+}
+
+input:focus::placeholder {
+    color: #3a3a3a;
 }
 
 /* checkbox */
